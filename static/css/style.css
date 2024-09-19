@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #5A67D8; /* Bright blue for primary actions */
+    --secondary-color: #2C2E3A; /* Dark grey for secondary elements */
+    --background-color: #141625; /* Dark navy blue for background */
+    --text-color: #FFFFFF; /* White for text */
+    --card-background: #1E2130; /* Slightly lighter shade for card background */
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for more depth */
+    --input-background: #2D2F3A; /* Dark gray for input background */
+    --input-border: #44475A; /* Slightly lighter grey for input border */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, var(--background-color) 100%, var(--background-color) 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--card-background);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--card-background);
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid var(--input-border);
+    border-radius: 4px 0 0 4px;
+    background-color: var(--input-background);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #3A46D8; /* Slightly lighter blue on hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#progress-container {
+    margin-top: 1.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+#progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#progress-text {
+    position: absolute; /* Position text absolutely within the container */
+    top: 0;
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust to the center */
+    width: 100%;
+    text-align: center; /* Center the text within its container */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    line-height: 20px; /* Match the height of the progress bar */
+}
+
+#message {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#download-link {
+    display: block;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#download-link:hover {
+    color: #3A46D8; /* Slightly lighter blue on hover */
+}
+
+.hidden {
+    display: none;
+}
