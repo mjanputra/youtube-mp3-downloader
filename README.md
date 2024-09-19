@@ -4,6 +4,10 @@
 
 The YouTube MP3 Downloader is a web application that allows users to download the audio from any YouTube video as an MP3 file. The application is built using Flask for the backend and features a clean and modern front-end interface. It uses yt-dlp, a YouTube video downloader library, to extract audio in the best available quality.
 
+## Live Preview
+
+[Live Preview](https://mjanputra.github.io/youtube-mp3-downloader/)
+
 ## Features
 
 - **Simple User Interface:** Enter the YouTube URL and download the MP3 with a single click.
