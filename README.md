@@ -8,6 +8,8 @@ The YouTube MP3 Downloader is a web application that allows users to download th
 
 [Live Preview](https://mjanputra.github.io/youtube-mp3-downloader/)
 
+- Note: You cannot use the live-preview to Download MP3 file.
+
 ## Features
 
 - **Simple User Interface:** Enter the YouTube URL and download the MP3 with a single click.
